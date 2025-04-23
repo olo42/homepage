@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/name: homepage
 data:
   kubernetes.yaml: |
-    mode: cluster
+    mode: disabled
   settings.yaml: ""
   #settings.yaml: |
   #  providers:
@@ -18,22 +18,54 @@ data:
     - Developer:
         - Github:
             - abbr: GH
-              href: https://github.com/
+              href: https://github.com/olo42
+    - Social:
+      - Reddit:
+        - icon: reddit.png
+          href: https://reddit.com/
+          description: The front page of the internet
+
+    - Entertainment:
+      - YouTube:
+        - abbr: YT
+          href: https://youtube.com/
   services.yaml: |
-    - My First Group:
-        - My First Service:
-            href: http://localhost/
-            description: Homepage is awesome
+    - Sites:
+        - Webmail:
+            href: https://mail.apck.de/
+            description: Webmail for us
+            # siteMonitor: https://mail.apck.de
+            icon: roundcube.png
+            ping: mail.apck.de
 
-    - My Second Group:
-        - My Second Service:
-            href: http://localhost/
-            description: Homepage is the best
-
-    - My Third Group:
-        - My Third Service:
-            href: http://localhost/
-            description: Homepage is 😎
+        - Vaultwarden:
+            href: https://pass.apck.de/
+            description: Our password manager
+            icon: vaultwarden.png
+            ping: pass.apck.de
+        - Nextcloud:
+            href: https://cloud.apck.de/
+            description: Where your files get synced to
+            icon: nextcloud.png
+            ping: cloud.apck.de
+    - Status Infos:
+      - AdGuard:
+          description: "Block advertisings"
+          href: http://adguard.home.apck.de
+          icon: adguard-home.png
+          ping: http://adguard.home.apck.de
+      - Bind DNS:
+          description: "Local Bind DNS Server"
+          icon: bind.png
+          ping: dns.home.apck.de
+      - Proxmox:
+          description: "Virtualization"
+          icon: proxmox.png
+          widget:
+            type: proxmox
+            url: https://pve.home.apck.de:8006
+            username: api@pam!homepage
+            password: b71261e1-e671-48fd-887c-d22172d3ea5e
   widgets.yaml: |
     - kubernetes:
         cluster:
