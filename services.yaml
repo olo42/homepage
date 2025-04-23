@@ -1,0 +1,6 @@
+- Group A:
+    - AdGuard:
+        description: Avoid Advertises & Tracking
+        widget:
+          type: adguard
+          url: http://adguard.home.apck.de
