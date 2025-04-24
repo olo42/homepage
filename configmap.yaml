@@ -61,11 +61,7 @@ data:
       - Proxmox:
           description: "Virtualization"
           icon: proxmox.png
-          widget:
-            type: proxmox
-            url: https://pve.home.apck.de:8006
-            username: api@pam!homepage
-            password: b71261e1-e671-48fd-887c-d22172d3ea5e
+          href: https://pve.home.apck.de:8006
   widgets.yaml: |
     - kubernetes:
         cluster:
