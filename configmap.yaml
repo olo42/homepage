@@ -29,6 +29,9 @@ data:
       - YouTube:
         - abbr: YT
           href: https://youtube.com/
+      - Twitch:
+        - icon: twitch.png
+          href: https://www.twitch.tv/
   services.yaml: |
     - Sites:
         - Webmail:
@@ -61,7 +64,7 @@ data:
       - Proxmox:
           description: "Virtualization"
           icon: proxmox.png
-          href: https://pve.home.apck.de:8006
+          href: http://192.168.23.5:8006
   widgets.yaml: |
     - kubernetes:
         cluster:
