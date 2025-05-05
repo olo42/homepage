@@ -57,10 +57,10 @@ data:
           href: http://adguard.home.apck.de
           icon: adguard-home.png
           ping: http://adguard.home.apck.de
-      - Bind DNS:
-          description: "Local Bind DNS Server"
-          icon: bind.png
-          ping: dns.home.apck.de
+      - Unbound DNS:
+          description: "Local Unbound DNS Server"
+          icon: unbound.png
+          ping: 192.168.23.52
       - Proxmox:
           description: "Virtualization"
           icon: proxmox.png
